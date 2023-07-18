@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: "SoDo Sans SemiBold", Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar span {
+    font-size: 1px;
+    padding-top: 20px;
+}
+
+.netvalue {
+    width: 170px;
+    height: 64px;
+    padding-right: 15px;
+}
+
+.jpx {
+    width: 42px;
+    height: 54px;
+    padding-right: 10px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+    padding-right: 20px;
+}
+
+.navbar-right div {
+    margin-right: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-top: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.navbar-right fas {
+    width: 200px;
+}
