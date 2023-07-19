@@ -3,11 +3,18 @@ body {
     font-family: "SoDo Sans SemiBold", Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
+li {    
+    list-style: none;
+}
+
+
+/* header */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 70px 3px 70px;
 }
 
 .navbar-left {
@@ -15,18 +22,18 @@ body {
 }
 
 .navbar span {
-    font-size: 1px;
+    font-size: 0.3px;
     padding-top: 20px;
 }
 
 .netvalue {
-    width: 170px;
+    width: 140px;
     height: 64px;
     padding-right: 15px;
 }
 
 .jpx {
-    width: 42px;
+    width: 38px;
     height: 54px;
     padding-right: 10px;
 }
@@ -35,20 +42,100 @@ body {
     display: flex;
 }
 
+
 .navbar-right {
     display: flex;
-    padding-right: 20px;
 }
 
-.navbar-right div {
-    margin-right: 30px;
+.navbar-right li {
+    margin-right: 40px;
     letter-spacing: 1px;
-    font-size: 15px;
-    padding-top: 5px;
+    font-size: 12px;
+    display: flex;
     align-items: center;
-    align-content: center;
 }
 
-.navbar-right fas {
-    width: 200px;
+.navbar-right>li>div::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-bottom: solid 1px #ca2828;
+    border-right: solid 1px #ca2828;
+    position: absolute;
+    top: 8%;
+    right: 345px;
+    margin-top: -6px;
+    transform: rotate(45deg);
+}
+
+.navbar-right>li>div::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-bottom: solid 1px #ca2828;
+    border-right: solid 1px #ca2828;
+    position: absolute;
+    top: 8%;
+    right: 160px;
+    margin-top: -6px;
+    transform: rotate(45deg);
+}
+
+
+/* section 1 */
+
+.main-1-img {
+    width: 100%;
+    height: 87vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 1;
+    filter: brightness(70%);
+}
+
+.vision {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 170px;
+}
+
+.vision h2 {
+    margin: auto;
+    font-size: 65px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.vision span {
+    letter-spacing: 0.9px;
+    font-size: 14px;
+}
+
+.main-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    padding: 5px 25px 5px 25px;
+    transition: 0.2s ease-out;
+    letter-spacing: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.9) 20px, rgba(255, 255, 255, 0.9) 20px), linear-gradient(135deg, transparent 20px, rgba(255, 255, 255, 0.9) 20px), linear-gradient(225deg, rgba(255, 255, 255, 0.9) 20px, rgba(255, 255, 255, 0.9) 20px), linear-gradient(315deg, rgba(255, 255, 255, 0.9) 20px, rgba(255, 255, 255, 0.9) 20px);
+    background-position: bottom left, top left, top right, bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.news-box {
+    line-height: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recurit-box {
+    display: flex;
+    align-items: center;
 }
